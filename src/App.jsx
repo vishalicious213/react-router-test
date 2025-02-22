@@ -4,10 +4,10 @@ import './App.css'
 function App() {
   return (
     <>
-    <Nav />
+      <Nav />
 
-    <div>App</div>
-</>
+      <div>App</div>
+    </>
   )
 }
 
