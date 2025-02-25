@@ -12,10 +12,6 @@ import Layout from './layout/Layout.jsx'
 function Main() {
   const [renderApp, setRenderApp] = useState(false)
 
-  const HomeToRender = () => {
-    return renderApp ? <App /> : <Home />
-  }
-
   function handleClick() {
     setRenderApp(prevState => !prevState)
   }
@@ -25,7 +21,7 @@ function Main() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout showApp={handleClick} />}>
-            <Route index element={<HomeToRender />} />
+            <Route index element={renderApp ? <App /> : <Home />} />
             <Route path="about-us" element={<AboutUs />} />
             <Route path="faq" element={<Faq />} />
             <Route path="contact" element={<Contact />} />
