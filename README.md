@@ -2,6 +2,8 @@
 
 Testing React Router v7 as a routing library, not as a full framework
 
+Deployed at: https://vish213-react-router-test.netlify.app/
+
 ## What's happening
 
 - `main.jsx` is dropping \<Main> into the root element from `index.html`
