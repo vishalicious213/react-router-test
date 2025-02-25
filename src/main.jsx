@@ -7,7 +7,7 @@ import App from './App.jsx'
 import Contact from './pages/Contact.jsx'
 import Faq from './pages/Faq.jsx'
 import Home from './pages/Home.jsx'
-import Layout from './Layout.jsx'
+import Layout from './layout/Layout.jsx'
 
 function Main() {
   const [renderApp, setRenderApp] = useState(false)
