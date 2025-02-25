@@ -28,15 +28,19 @@ nav section {
   color: white;
 }
 
-.login-btn {
+.btn {
+  margin-top: 1rem;
+}
+
+.login-btn, .btn {
   border: 1px solid rgba(255, 255, 255, 0.87);
   cursor: pointer;
-  width: 4rem;
+  padding: 0 .5rem;
   text-align: center;
   border-radius: .25rem;
 }
 
-.login-btn:hover {
+.login-btn:hover, .btn:hover {
   color: #242424;
   background: rgba(255, 255, 255, 0.87);
   font-weight: 600;
@@ -54,6 +58,7 @@ nav section {
 
 .sidebar div:hover {
   color: white;
+  text-decoration: underline;
 }
 
 .sidebar h2 {

@@ -3,6 +3,7 @@ import Sidebar from './Sidebar'
 import Connections from './connections/Connections'
 import CoffeeChats from './connections/CoffeeChats'
 import FindAChat from './connections/FindAChat'
+import FindChatMatch from './connections/FindChatMatch'
 import Messages from './connections/Messages'
 import Requests from './connections/Requests'
 import Availability from './profile/Availability'
@@ -18,7 +19,8 @@ function App() {
       case 'connections': return <Connections />
       case 'coffee-chats': return <CoffeeChats />
       case 'requests': return <Requests />
-      case 'find-a-chat': return <FindAChat />
+      case 'find-a-chat': return <FindAChat setToolToRender={setToolToRender} />
+      case 'find-chat-match': return <FindChatMatch />
       case 'messages': return <Messages />
       case 'availability': return <Availability />
       case 'personal-details': return <PersonalDetails />
