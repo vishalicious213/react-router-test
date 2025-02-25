@@ -15,8 +15,13 @@
 
 nav {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
   margin-bottom: 1rem;
+}
+
+nav section {
+  display: flex;
+  gap: 1rem;
 }
 
 .nav-link {
