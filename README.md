@@ -1,6 +1,6 @@
 # React Router v7 Test
 
-Testing React Router v7 for routing capabilities
+Testing React Router v7 as a routing library, not as a full framework
 
 ## What's happening
 
@@ -10,7 +10,12 @@ Testing React Router v7 for routing capabilities
         - This component renders either \<Home> or \<App> depending on a piece of state called `renderApp`
         - `renderApp` controls what `HomeToRender` shows, either \<Home> if the user is logged out or \<App> if the user is logged in
             - This is the `index` of \<Layout>, which means one of them renders in its path ("/") by default
-- \<Layout> renders \<Nav> and whatever component was selected from the `nav` in its \<Outlet>
-    - \<About Us>, \<FAQ> & \<Contact> render with paths in the URL (/about-us, /faq & /contact, respectively)
-    - \<Home> shows the landing page & \<App> shows the application but retain the "/" path
-- \<Login> takes the state-setter `setRenderApp` from main -> layout -> nav -> login & updates whether to show \<Home> or \<App> in tandem with the value of its own state of `isLoggedIn`
+- \<Layout> renders \<Nav> at the top of the browser window & the component that was selected from the `nav` in its \<Outlet>
+    - \<About Us> renders with the `/about-us` path
+    - \<FAQ> renders with the `/faq` path
+    - \<Contact> renders with the `/contact` path
+    - \<Home> shows the landing page  & retains the `/` path
+    - \<App> shows the application & retains the `/` path
+- \<Login> takes the state-setter `setRenderApp` from main -> layout -> nav -> login via prop-drilling
+    - It updates `renderApp` to display \<Home> if `isLoggedIn` is `false`
+    - It updates `renderApp` to display \<App> if `isLoggedIn` is `true`
