@@ -46,3 +46,18 @@ nav section {
   display: flex;
   gap: 1rem;
 }
+
+.sidebar div {
+  margin: .5rem 0 .5rem .75rem;
+  cursor: pointer;
+}
+
+.sidebar div:hover {
+  color: white;
+}
+
+.sidebar h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+}
