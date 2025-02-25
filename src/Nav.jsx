@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router"
 import Login from './Login'
 
-const Nav = () => {
+const Nav = ({showApp}) => {
     return (
         <>
             <nav>
@@ -12,7 +12,7 @@ const Nav = () => {
                     <Link className='nav-link' to="/faq">FAQ</Link>
                     <Link className='nav-link' to="/contact">Contact</Link>
                 </section>
-                <Login />
+                <Login showApp={showApp} />
             </nav>
         </>
     )

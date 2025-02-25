@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 
-const Login = () => {
+const Login = ({showApp}) => {
     const [isLoggedIn, setIsLoggedIn] = useState(false)
 
     function handleClick() {
         setIsLoggedIn(prevState => !prevState)
+        showApp()
     }
 
     return (

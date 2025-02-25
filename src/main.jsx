@@ -10,17 +10,21 @@ import Home from './Home.jsx'
 import Layout from './Layout.jsx'
 
 function Main() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const [renderApp, setRenderApp] = useState(false)
 
   const HomeToRender = () => {
-    return isLoggedIn ? <App /> : <Home />
+    return renderApp ? <App /> : <Home />
+  }
+
+  function handleClick() {
+    setRenderApp(prevState => !prevState)
   }
 
   return (
     <StrictMode>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Layout showApp={handleClick} />}>
             <Route index element={<HomeToRender />} />
             <Route path="about-us" element={<AboutUs />} />
             <Route path="faq" element={<Faq />} />
