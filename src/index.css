@@ -41,3 +41,8 @@ nav section {
   background: rgba(255, 255, 255, 0.87);
   font-weight: 600;
 }
+
+.app-container {
+  display: flex;
+  gap: 1rem;
+}
