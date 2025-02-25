@@ -30,10 +30,7 @@ function App() {
 
   return (
     <div className='app-container'>
-      <section>
-        <div>App</div>
-        <Sidebar setToolToRender={setToolToRender} />
-      </section>
+      <Sidebar setToolToRender={setToolToRender} />
 
       <main>
         {renderTool()}

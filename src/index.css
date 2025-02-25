@@ -13,6 +13,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* APP */
+
+.app-container {
+  display: flex;
+  gap: 1rem;
+}
+
+/* NAV */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -27,6 +36,8 @@ nav section {
 .nav-link {
   color: white;
 }
+
+/* BUTTONS */
 
 .btn {
   margin-top: 1rem;
@@ -46,17 +57,14 @@ nav section {
   font-weight: 600;
 }
 
-.app-container {
-  display: flex;
-  gap: 1rem;
-}
+/* SIDEBAR */
 
-.sidebar div {
+.sidebar-item {
   margin: .5rem 0 .5rem .75rem;
   cursor: pointer;
 }
 
-.sidebar div:hover {
+.sidebar-item:hover {
   color: white;
   text-decoration: underline;
 }
@@ -64,5 +72,9 @@ nav section {
 .sidebar h2 {
   font-size: 1rem;
   font-weight: 400;
+  margin: 0;
+}
+
+.sidebar .sidebar-section {
   margin-top: 1.5rem;
 }

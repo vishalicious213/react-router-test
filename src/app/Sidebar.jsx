@@ -8,16 +8,16 @@ const Sidebar = ({ setToolToRender }) => {
     return (
         <section className="sidebar">
             <h2>My Dashboard</h2>
-            <div onClick={() => handleClick("connections")}>Connections</div>
-            <div onClick={() => handleClick("coffee-chats")}>Coffee Chats</div>
-            <div onClick={() => handleClick("requests")}>Requests</div>
-            <div onClick={() => handleClick("find-a-chat")}>Find a Chat</div>
-            <div onClick={() => handleClick("messages")}>Messages</div>
+            <div className="sidebar-item" onClick={() => handleClick("connections")}>Connections</div>
+            <div className="sidebar-item" onClick={() => handleClick("coffee-chats")}>Coffee Chats</div>
+            <div className="sidebar-item" onClick={() => handleClick("requests")}>Requests</div>
+            <div className="sidebar-item" onClick={() => handleClick("find-a-chat")}>Find a Chat</div>
+            <div className="sidebar-item" onClick={() => handleClick("messages")}>Messages</div>
 
-            <h2>My Profile</h2>
-            <div onClick={() => handleClick("personal-details")}>Personal Details</div>
-            <div onClick={() => handleClick("availability")}>Availability</div>
-            <div onClick={() => handleClick("social-links")}>Social Links</div>
+            <h2 className="sidebar-section">My Profile</h2>
+            <div className="sidebar-item" onClick={() => handleClick("personal-details")}>Personal Details</div>
+            <div className="sidebar-item" onClick={() => handleClick("availability")}>Availability</div>
+            <div className="sidebar-item" onClick={() => handleClick("social-links")}>Social Links</div>
         </section>
     )
 }
