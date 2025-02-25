@@ -1,11 +1,8 @@
 import React from 'react'
-import Nav from './Nav'
 
 const Faq = () => {
     return (
         <>
-            <Nav />
-
             <div>FAQ</div>
         </>
     )
