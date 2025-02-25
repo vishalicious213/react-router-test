@@ -9,7 +9,8 @@ Testing React Router v7 as a routing library, not as a full framework
     - "/" renders the \<Layout> component
         - This component renders either \<Home> or \<App> depending on a piece of state called `renderApp`
         - `renderApp` controls what `HomeToRender` shows, either \<Home> if the user is logged out or \<App> if the user is logged in
-            - This is the `index` of \<Layout>, which means one of them renders in its path ("/") by default
+            - This is the `index` of \<Layout>, which means one of them renders in its path (`/`) by default
+    - The other components (\<About Us>, \<FAQ>, \<Contact>) have their own paths
 - \<Layout> renders \<Nav> at the top of the browser window & the component that was selected from the `nav` in its \<Outlet>
     - \<About Us> renders with the `/about-us` path
     - \<FAQ> renders with the `/faq` path
