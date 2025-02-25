@@ -20,7 +20,7 @@ function App() {
     <div className='app-container'>
       <section>
         <div>App</div>
-        <Sidebar />
+        <Sidebar setToolToRender={setToolToRender} />
       </section>
 
       <main>
