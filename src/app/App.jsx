@@ -3,6 +3,9 @@ import Sidebar from './Sidebar'
 import Connections from './connections/Connections'
 import CoffeeChats from './connections/CoffeeChats'
 import Requests from './connections/Requests'
+import Availability from './profile/Availability'
+import PersonalDetails from './profile/PersonalDetails'
+import SocialLinks from './profile/SocialLinks'
 import './App.css'
 
 function App() {
@@ -13,6 +16,9 @@ function App() {
       case 'connections': return <Connections />
       case 'coffeechats': return <CoffeeChats />
       case 'requests': return <Requests />
+      case 'availability': return <Availability />
+      case 'personaldetails': return <PersonalDetails />
+      case 'sociallinks': return <SocialLinks />
     }
   }
 

@@ -13,9 +13,9 @@ const Sidebar = ({ setToolToRender }) => {
             <div onClick={() => handleClick("requests")}>Requests</div>
 
             <h2>My Profile</h2>
-            <div>Personal Details</div>
-            <div>Availability</div>
-            <div>Social Links</div>
+            <div onClick={() => handleClick("personaldetails")}>Personal Details</div>
+            <div onClick={() => handleClick("availability")}>Availability</div>
+            <div onClick={() => handleClick("sociallinks")}>Social Links</div>
         </section>
     )
 }
