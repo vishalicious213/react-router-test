@@ -9,7 +9,7 @@ const Login = () => {
 
     return (
         <section>
-            <div onClick={handleClick}>{isLoggedIn ? "Logout" : "Login"}</div>
+            <div className="login-btn" onClick={handleClick}>{isLoggedIn ? "Logout" : "Login"}</div>
         </section>
     )
 }

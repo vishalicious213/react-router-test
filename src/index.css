@@ -27,3 +27,17 @@ nav section {
 .nav-link {
   color: white;
 }
+
+.login-btn {
+  border: 1px solid rgba(255, 255, 255, 0.87);
+  cursor: pointer;
+  width: 4rem;
+  text-align: center;
+  border-radius: .25rem;
+}
+
+.login-btn:hover {
+  color: #242424;
+  background: rgba(255, 255, 255, 0.87);
+  font-weight: 600;
+}
