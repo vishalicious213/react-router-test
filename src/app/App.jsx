@@ -1,17 +1,22 @@
-import { Routes, Route, Outlet } from 'react-router'
-import Dashboard from './Dashboard'
+import Sidebar from './Sidebar'
+import Connections from './connections/Connections'
+import CoffeeChats from './connections/CoffeeChats'
+import Requests from './connections/Requests'
 import './App.css'
 
 function App() {
   return (
     <>
-      <div>App</div>
+      <section>
+        <div>App</div>
+        <Sidebar />
+      </section>
 
-      <Routes>
-        <Route index element={<Dashboard />} />
-      </Routes>
-
-      <Outlet />
+      <main>
+          <Connections />
+          <CoffeeChats />
+          <Requests />
+      </main>
     </>
   )
 }
