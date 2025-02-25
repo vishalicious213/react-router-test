@@ -25,6 +25,7 @@ function App() {
       case 'availability': return <Availability />
       case 'personal-details': return <PersonalDetails />
       case 'social-links': return <SocialLinks />
+      default: return <Connections />
     }
   }
 
