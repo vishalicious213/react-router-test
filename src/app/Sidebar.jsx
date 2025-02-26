@@ -1,8 +1,10 @@
-import React from 'react'
+import { useNavigate } from 'react-router'
 
-const Sidebar = ({ setToolToRender }) => {
+const Sidebar = () => {
+    const navigate = useNavigate()
+
     function handleClick(tool) {
-        setToolToRender(tool)
+        navigate(`/app/${tool}`)
     }
 
     return (
