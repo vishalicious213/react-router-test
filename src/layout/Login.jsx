@@ -1,7 +1,15 @@
-import React, { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router'
 
 const Login = ({showApp}) => {
     const [isLoggedIn, setIsLoggedIn] = useState(false)
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        if (!isLoggedIn) {
+            navigate("/")
+        }
+    }, [isLoggedIn, navigate])
 
     function handleLogin() {
         setIsLoggedIn(prevState => !prevState)
