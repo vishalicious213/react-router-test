@@ -9,7 +9,7 @@ const Login = ({showApp}) => {
         if (!isLoggedIn) {
             navigate("/")
         }
-    }, [isLoggedIn, navigate])
+    }, [isLoggedIn])
 
     function handleLogin() {
         setIsLoggedIn(prevState => !prevState)
