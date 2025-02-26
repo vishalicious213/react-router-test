@@ -3,11 +3,11 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router'
 import './index.css'
 import AboutUs from './pages/AboutUs.jsx'
-import App from './app/App.jsx'
 import Contact from './pages/Contact.jsx'
 import Faq from './pages/Faq.jsx'
 import Home from './pages/Home.jsx'
 import Layout from './layout/Layout.jsx'
+import App from './app/App.jsx'
 import Connections from './app/connections/Connections'
 import CoffeeChats from './app/connections/CoffeeChats'
 import FindAChat from './app/connections/FindAChat'
@@ -36,7 +36,7 @@ function Main() {
             <Route path="contact" element={<Contact />} />
 
             <Route path="app" element={<App />}>
-                <Route index element={<Connections />} /> {/* Default route inside App */}
+                <Route index element={<Connections />} />
                 <Route path="connections" element={<Connections />} />
                 <Route path="coffee-chats" element={<CoffeeChats />} />
                 <Route path="requests" element={<Requests />} />
